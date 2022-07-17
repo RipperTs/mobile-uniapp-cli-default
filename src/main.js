@@ -44,7 +44,7 @@ Vue.prototype.$leftClick = function leftClick() {
     if (getCurrentPages().length > 1) {
         uni.navigateBack()
     } else {
-        uni.redirectTo({
+        uni.switchTab({
             url: '/pages/index/index'
         })
     }
