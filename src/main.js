@@ -39,6 +39,17 @@ Vue.prototype.$loading = function loading(tf) {
     }
 };
 
+//全局返回键操作
+Vue.prototype.$leftClick = function leftClick() {
+    if (getCurrentPages().length > 1) {
+        uni.navigateBack()
+    } else {
+        uni.redirectTo({
+            url: '/pages/index/index'
+        })
+    }
+};
+
 App.mpType = 'app'
 const app = new Vue({
     ...App

@@ -25,7 +25,7 @@
     ],
     "globalStyle": {
         "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "猩球活动",
+        "navigationBarTitleText": "示例项目",
         "navigationBarBackgroundColor": "#ffffff",
         "backgroundColor": "#f5f5f5"
     },
