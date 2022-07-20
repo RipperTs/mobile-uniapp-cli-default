@@ -1,4 +1,5 @@
 import {baseUrl} from '@/config';
+import common from './index';
 
 /**
  * 获取get请求
@@ -34,9 +35,7 @@ const _get = (url, data, success, fail, complete) => {
             if (res.data.error_code === 401) {
                 // 登录态失效, 重新登录
                 uni.hideNavigationBarLoading();
-                uni.navigateTo({
-                    url: "/pages/login/login?delta=2"
-                });
+                common.doLogin(2);
             } else if (res.data.error_code !== 0) {
                 uni.showModal({
                     title: '友情提示',
@@ -95,9 +94,7 @@ const _post = (url, data, success, fail, complete, isShowNavBarLoading) => {
             if (res.data.error_code === 401) {
                 // 登录态失效, 重新登录
                 uni.hideNavigationBarLoading();
-                uni.navigateTo({
-                    url: "/pages/login/login?delta=2"
-                });
+                common.doLogin(2);
             } else if (res.data.error_code !== 0) {
                 uni.showModal({
                     title: '友情提示',

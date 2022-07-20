@@ -3,7 +3,9 @@ import store from "./store";
 import App from './App'
 import uView from "uview-ui";
 import apis from './common/api';
+import common from './common/index';
 import wLoading from "components/w-loading/w-loading.vue"
+import wx from 'weixin-js-sdk'
 
 Vue.component('w-loading', wLoading)
 Vue.use(uView);
@@ -25,9 +27,9 @@ uni.$u.setConfig({
 })
 
 Vue.config.productionTip = false
-// vue原型挂载 - 请求接口函数
+// vue原型挂载
 Vue.prototype.$api = apis;
-//挂在到Vue原型链上
+Vue.prototype.$common = common;
 Vue.prototype.$store = store;
 
 //是否显示加载中 的方法 调用store中的mutations方法
@@ -36,17 +38,6 @@ Vue.prototype.$loading = function loading(tf) {
         store.commit("switch_loading", tf)
     } else {
         store.commit("switch_loading")
-    }
-};
-
-//全局返回键操作
-Vue.prototype.$leftClick = function leftClick() {
-    if (getCurrentPages().length > 1) {
-        uni.navigateBack()
-    } else {
-        uni.switchTab({
-            url: '/pages/index/index'
-        })
     }
 };
 

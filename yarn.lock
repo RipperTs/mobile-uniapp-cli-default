@@ -7383,6 +7383,11 @@
     "readable-stream" "~2.3.6"
     "setimmediate" "^1.0.5"
 
+"jweixin-module@^1.6.0":
+  "integrity" "sha512-dGk9cf+ipipHmtzYmKZs5B2toX+p4hLyllGLF6xuC8t+B05oYxd8fYoaRz0T30U2n3RUv8a4iwvjhA+OcYz52w=="
+  "resolved" "https://registry.npmmirror.com/jweixin-module/-/jweixin-module-1.6.0.tgz"
+  "version" "1.6.0"
+
 "keygrip@~1.1.0":
   "integrity" "sha512-iYSchDJ+liQ8iwbSI2QqsQOvqv58eJCEanyJPJi+Khyu8smkcKSFUCbPwzFcL7YVtZ6eONjqRX/38caJ7QjRAQ=="
   "resolved" "https://registry.npmjs.org/keygrip/-/keygrip-1.1.0.tgz"
@@ -11999,6 +12004,11 @@
   "integrity" "sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg=="
   "resolved" "https://registry.npmmirror.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz"
   "version" "0.1.4"
+
+"weixin-js-sdk@^1.6.0":
+  "integrity" "sha512-3IYQH7aalJGFJrwdT3epvTdR1MboMiH7vIZ5BRL2eYOJ12BNah7csoMkmSZzkq1+l92sSq29XdTCVjCJoK2sBQ=="
+  "resolved" "https://registry.npmmirror.com/weixin-js-sdk/-/weixin-js-sdk-1.6.0.tgz"
+  "version" "1.6.0"
 
 "whatwg-encoding@^1.0.1", "whatwg-encoding@^1.0.5":
   "integrity" "sha512-b5lim54JOPN9HtzvK9HFXvBma/rnfFeqsic0hSpjtDbVxR3dJKLc+KB4V6GgiGOvl7CY/KNh8rxSo9DKQrnUEw=="
