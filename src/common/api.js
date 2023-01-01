@@ -24,7 +24,6 @@ const _get = (url, data, success, fail, complete) => {
         data: data,
         success(res) {
             if (res.statusCode !== 200 || typeof res.data !== 'object') {
-                console.log(res);
                 uni.showModal({
                     title: '友情提示',
                     content: '网络请求出错',
@@ -83,7 +82,6 @@ const _post = (url, data, success, fail, complete, isShowNavBarLoading) => {
         method: 'POST',
         success(res) {
             if (res.statusCode !== 200 || typeof res.data !== 'object') {
-                console.log(res);
                 uni.showModal({
                     title: '友情提示',
                     content: '网络请求出错',

@@ -22,42 +22,6 @@ export default {
 
     },
     methods: {
-        // 微信支付(微信公众号)
-        payNow () {
-            const _this = this
-            _this.$api._post('PayActivity/pay/h5', {
-                order_id: _this.orderInfo.id
-            }, result => {
-                _this.$common.wechatUtil((wx, res) => {
-                    wx.chooseWXPay({
-                        timestamp: result.data.timestamp,
-                        nonceStr: result.data.nonceStr,
-                        package: result.data.package,
-                        signType: 'MD5',
-                        paySign: result.data.paySign,
-                        success: function (res) {
-                            _this.getUserInfo()
-                            uni.showToast({
-                                title: '支付成功',
-                                success() {
-                                    uni.switchTab({
-                                        url: '/pages/index/index'
-                                    })
-                                }
-                            });
-                        },
-                        fail (res) {
-                            uni.showModal({
-                                title: '友情提示',
-                                content: res.data.message,
-                                showCancel: false,
-                            });
-                        }
-                    })
-                })
-            })
-        },
-
 
         // 微信支付小程序
         payNowWechat() {

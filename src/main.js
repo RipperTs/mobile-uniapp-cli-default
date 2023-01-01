@@ -5,7 +5,7 @@ import uView from "uview-ui";
 import apis from './common/api';
 import common from './common/index';
 import wLoading from "components/w-loading/w-loading.vue"
-import wx from 'weixin-js-sdk'
+import './static/icons' // icon
 
 Vue.component('w-loading', wLoading)
 Vue.use(uView);
@@ -13,7 +13,7 @@ uni.$u.setConfig({
     // 修改$u.config对象的属性
     config: {
         // 修改默认单位为rpx，相当于执行 uni.$u.config.unit = 'rpx'
-        unit: 'rpx'
+        unit: 'px'
     },
     // 修改$u.props对象的属性
     props: {

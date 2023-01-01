@@ -56,7 +56,6 @@ export default {
                     loginInfo.detail = res;
                     _this.userInfo = res.userInfo
                     _this.hasUserInfo = true
-                    console.log(loginInfo)
                     _this.doLogin(loginInfo, () => {
                         // 跳转回原页面
                         _this.onNavigateBack(1);
@@ -109,9 +108,6 @@ export default {
             uni.navigateBack({
                 delta: Number(this.delta || 1)
             });
-            // wx.switchTab({
-            //     url: '/pages/member/member'
-            // })
         },
     },
 };
