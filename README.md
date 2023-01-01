@@ -1,4 +1,4 @@
-# huanrenka
+# hello-uniapp-cli
 
 ## Project setup
 ```
